@@ -40,7 +40,8 @@ You should see:
 ```
 
 ### Step 3: Start Frontend (Terminal 2)
-```bash
+```
+cd "RAG-Agent"
 uv run streamlit run frontend/app.py
 ```
 
