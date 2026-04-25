@@ -20,7 +20,7 @@ RAG-Agent/
 └── .env                  # Your API keys (already configured)
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Step 1: Install Dependencies (ONE TIME)
 ```bash
@@ -34,8 +34,8 @@ uv run python backend_api.py
 
 You should see:
 ```
-✅ API READY AT: http://localhost:8000
-📚 API DOCS AT: http://localhost:8000/docs
+ API READY AT: http://localhost:8000
+ API DOCS AT: http://localhost:8000/docs
 ```
 
 ### Step 3: Start Frontend (Terminal 2)
@@ -52,7 +52,7 @@ Local URL: http://localhost:8501
 ### Step 4: Open Browser
 Go to: **http://localhost:8501**
 
-## 📖 How It Works
+##  How It Works
 
 1. **First Run**: The backend processes the PDF and creates a vector store (1-2 minutes)
 2. **Subsequent Runs**: Uses cached vector store (instant)
@@ -68,7 +68,7 @@ Go to: **http://localhost:8501**
 | `backend_api.py` | FastAPI server with `/ask` endpoint |
 | `frontend/app.py` | Streamlit UI for asking questions |
 
-## 📝 Code Explanation
+##  Code Explanation
 
 ### simple_rag.py
 - `SimpleRAG class` - Main RAG logic
@@ -86,7 +86,7 @@ Go to: **http://localhost:8501**
 - Display answer and sources
 - Health check to verify API is running
 
-## ❓ Troubleshooting
+##  Troubleshooting
 
 **API won't start:**
 - Check .env file has OPENAI_API_KEY
@@ -105,19 +105,19 @@ Go to: **http://localhost:8501**
 - Delete `data/vector_store/` folder
 - Run backend again - will reprocess PDF
 
-## 🔑 Environment Variables (Already in .env)
+##  Environment Variables (Already in .env)
 - `OPENAI_API_KEY` - For embeddings and answers
 - `OPENAI_MODEL` - Which model to use (gpt-4.1)
 - `LANGCHAIN_API_KEY` - For tracing (optional)
 
-## 🛠️ Windows Batch Files
+##  Windows Batch Files
 
 Instead of typing commands, you can use batch files:
 
 1. **start_backend.bat** - Double-click to start backend
 2. **start_frontend.bat** - Double-click to start frontend
 
-## 📚 API Documentation
+##  API Documentation
 
 When backend is running, visit: http://localhost:8000/docs
 
@@ -125,10 +125,10 @@ This shows all endpoints:
 - `GET /health` - Check if API is running
 - `POST /ask` - Ask a question
 
-## ✅ Done!
+##  Done!
 
 That's it! Very simple RAG system that just works.
 
 Questions → PDF Search → LLM Answer → Display Result
 
-Enjoy! 🎉
+Enjoy! 
