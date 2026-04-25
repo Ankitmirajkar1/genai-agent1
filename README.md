@@ -29,7 +29,8 @@ uv sync
 
 ### Step 2: Start Backend API (Terminal 1)
 ```bash
-uv run python backend_api.py
+cd "RAG-Agent"
+uv run python -m uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 You should see:
